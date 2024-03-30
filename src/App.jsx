@@ -20,10 +20,10 @@ function App() {
 
   return (
     <>
-    {/* <Sidebar 
+    <Sidebar 
       isOpen  = {isOpen}
       toggle = {toggle}
-    /> */}
+    />
     <Header 
       toggle = {toggle}
     />
