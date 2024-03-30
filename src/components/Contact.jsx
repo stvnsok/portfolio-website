@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading } from '../styles/Global.styled'
-import { ContactContainer, Button, ButtonWrapper } from '../styles/Contact.styled'
+import { ContactContainer, Button, ButtonWrapper  } from '../styles/Contact.styled'
 import { motion } from 'framer-motion'
 
 
@@ -14,7 +14,8 @@ const Contact = () => {
               Get in touch
             </h1>
             <a>
-              <p>Want to discuss a project or just say hi? Send me a message :&#41; </p>
+              <p>Want to discuss a project or just say hi?  </p>
+              <p>Send me a message :&#41;</p>
             </a>
             <ButtonWrapper>
 

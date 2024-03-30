@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
-const MEDIUM_SIZE = "900";
 export const AboutContainer = styled(motion.div)`
     width: 100%;
     
@@ -39,17 +37,24 @@ export const TextWrapper = styled.div`
     .about-text {
         font-size: 1.25em;
     }
+    margin-left: 35px;
+    margin-right: 35px;
 `
 export const Container = styled.div`
     margin-top: 35px;
 
 `
-export const SkillRow = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media (max-width: ${MEDIUM_SIZE}px) {
-        flex-direction: column;
-        gap: 5px;
+export const SkillStyle = styled.div`
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+    @media(max-width: 550px) {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
 `

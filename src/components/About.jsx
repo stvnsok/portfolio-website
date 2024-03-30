@@ -2,18 +2,19 @@ import React from 'react'
 import { 
   AboutContainer, 
   SkillsWrapper, 
-  Card, 
   Photo,
   PhotoWrapper,
   Container,
   TextWrapper,
-  SkillRow,
+
+  SkillStyle
 } from '../styles/About.styled'
 
 import {
   Heading,
 } from '../styles/Global.styled'
-import { firstBox, secondBox, thirdBox, fourthBox } from '../utils/Data'
+import { skillsData } from '../utils/Data'
+
 import SkillCard from './SkillCard'
 import Photo1 from '../assets/images/Photo1.jpg'
 
@@ -55,68 +56,20 @@ const About = () => {
         </Container>
         <SkillsWrapper>
           <div className='skills-heading'>Some of my skills</div>
-          <SkillRow>
-            
-            <Card>
+          <SkillStyle>
 
-              {firstBox.map((item,i) => {
-                return(
-                  <SkillCard 
-                    key = {i}
-                    icon = {item.icon} 
-                    title = {item.title}
-                    color = {item.color}
-                  >
-                  </SkillCard>
-                )
-              })}
-            </Card>
-            <Card>
-                
-                {secondBox.map((item,i) => {
-                  return(
-                    <SkillCard 
-                      key = {i}
-                      icon = {item.icon}
-                      title = {item.title}
-                      color = {item.color}
-                    >
-                    </SkillCard>
-                  )
-                })}
-            </Card>
-          </SkillRow>
-          <SkillRow>
-            
-            <Card>
-
-              {thirdBox.map((item,i) => {
-                return(
-                  <SkillCard 
-                    key = {i}
-                    icon = {item.icon} 
-                    title = {item.title}
-                    color = {item.color}
-                  >
-                  </SkillCard>
-                )
-              })}
-            </Card>
-            <Card>
-                
-                {fourthBox.map((item,i) => {
-                  return(
-                    <SkillCard 
-                      key = {i}
-                      icon = {item.icon}
-                      title = {item.title}
-                      color = {item.color}
-                    >
-                    </SkillCard>
-                  )
-                })}
-            </Card>
-          </SkillRow>
+            {skillsData.map((item,i) => {
+              return(
+                <SkillCard 
+                  key = {i}
+                  icon = {item.icon}
+                  title = {item.title}
+                  color = {item.color}
+                >
+                </SkillCard>
+              )
+            })}
+          </SkillStyle>
         </SkillsWrapper>
 
     </AboutContainer>

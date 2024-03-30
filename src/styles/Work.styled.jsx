@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 
-const TABLET_SIZE = '768';
-const MOBILE_SIZE = '480';
+
 export const WorkWrapper = styled(motion.div)`
     height: fit-content;
 
@@ -20,11 +19,18 @@ export const ProjectContainer = styled.div`
 
 export const ProjectContainer2 = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    gap: 2rem 2.5rem;
     flex-direction: row;
     justify-content: space-between;
     margin: 4.5%;
+
+
+    @media (max-width: 48px) {
+        grid-template-row: repeat(200px, 1fr));
+        gap: 1.5rem 1.5rem;
+        margin: 2.5%;
+    }
 
 }
 `
@@ -58,16 +64,28 @@ align-items: center;
     }
     .project-image {
         position: relative;
-        height: 250px;
         overflow: hidden;
         display: flex;
         justify-content: center;
-        align-items: center;
+        @media (max-width: 480px) {
+            width: clamp(200px, 100%, 400px);
+            height: 100%;
+        }
     }
 
      &:hover {
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
     
+     }
+     
+     @media (max-width: 480px) {
+        width: clamp(200px, 340px, 480px);
+       
+     }
+
+     @media (max-width: 400px) {
+        width: clamp(200px, 300px, 380px);
+       
      }
 `
 

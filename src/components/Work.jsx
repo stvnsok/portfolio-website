@@ -60,7 +60,9 @@ const Work = () =>{
 
             <Heading>Recent Work</Heading>
           </div>
-          <div className = 'project-text-container'><p className = 'project-text'>Some of my personal projects that I have created</p></div>
+          <div className = 'project-text-container'>
+            <p className = 'project-text'>Some of my personal projects that I have created</p>
+          </div>
           <ProjectContainer2>
             {projectData.map((project, index) => {
               return (

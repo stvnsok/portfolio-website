@@ -71,7 +71,7 @@ const HomePage = () => {
               visible: { opacity: 1, scale: 1 },
               hidden: { opacity: 0, scale: 0 }
               }}
-              whileHover={{ scale: 1.4 }}
+              whileHover={{  color: '#7C7C7C' }}
             >
               {item.icon}
             </SocialIcon>

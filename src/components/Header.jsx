@@ -45,7 +45,7 @@ const Header = ({toggle}) => {
                 >
                   <motion.span
 
-                    whileHover={{ scale: 1.2 }}
+                    whileHover={{ color: '#A7333F' }}
                   >
                     {link.title}
                   </motion.span>

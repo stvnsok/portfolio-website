@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion'
 
 export const FooterContainer = styled.footer`
     display: flex;
@@ -34,6 +35,10 @@ export const SocialIcon = styled.a`
         height: 20px;
         width: 20px;
         color: black;
+        &:hover {
+            color: #A7333F;
+        }
+
     }
     cursor: pointer;
 

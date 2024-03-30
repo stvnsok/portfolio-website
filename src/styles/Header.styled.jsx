@@ -60,6 +60,9 @@ export const MenuIcon = styled(FaBars)`
     @media (max-width: ${MEDIUM_SIZE}${"px"}){
     display: block;
     }
+    &:hover {
+        color: #A7333F;
+    }
 `
 export const MenuContainer = styled.div`
     display: none;

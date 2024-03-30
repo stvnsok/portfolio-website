@@ -42,6 +42,9 @@ export const SocialIcon = styled(motion.a)`
         height: 25px;
         width: 25px;
         color: black;
+        &:hover {
+            color: #A7333F;
+        }
     }
 
 `
