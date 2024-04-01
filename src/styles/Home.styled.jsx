@@ -18,7 +18,7 @@ export const TextWrapper = styled.span`
 
 
 export const Heading = styled(motion.h1)`
-    margin: '0';
+    margin: 0;
     font-weight: bold;
     font-size: 3.5rem;
     gap: 1rem;
