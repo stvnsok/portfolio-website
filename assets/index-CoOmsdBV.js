@@ -129,7 +129,7 @@ Error generating stack: `+o.message+`
     font-weight: bold;
     color: #A7333F;
 `,c7=I(xt.h1)`
-    margin: '0';
+    margin: 0;
     font-weight: bold;
     font-size: 3.5rem;
     gap: 1rem;
